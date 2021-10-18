@@ -1,0 +1,226 @@
+main{
+    position: absolute;
+    right: 0;
+    left: 15em;
+    top: 8em;
+}
+main .revenues{
+    position: absolute;
+    top: 3em;
+    left: 5%;
+    width: 90%;
+    height: 14em;
+    background-color: #f1f1f1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    border-radius: 1em;
+}
+main .revenues .books{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+main .revenues .cds{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+main .revenues .total{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+main .revenues .revenue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .revenues .revenue .picture{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-right: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EAA451;
+}
+main .revenues .revenue .picture .fa-3x{
+    display: none;
+}
+main .revenues .books .picture .fa-3x{
+    display: block;
+}
+main .revenues .books .picture .fa-2x{
+    display: none;
+}
+main .revenues .revenue .text{
+    width: 50%;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main .revenues .revenue .text p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #a1a1a1;
+}
+main .revenues .revenue .text .percent{
+    color: rgb(65, 167, 185);
+}
+main .revenues .revenue .text h2{
+    padding: 0;
+    margin: 0;
+    font-size: 3em;
+    line-height: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e6475c;
+}
+main .listbill{
+    position: absolute;
+    width: 90%;
+    top: 20em;
+    left: 5%;
+    height: 50em;
+    border-radius: 1em;
+    /* border: 1px solid #a1a1a1; */
+    background-color: #f1f1f1;
+    box-shadow: -1px 1px #EAA451;
+    margin-bottom: 1em;
+}
+main .listbill .title{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .listbill .title h2{
+    color: #131045;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+} 
+main .listbill table{
+    width: 99%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+main .listbill table th{
+    font-size: 1.5em;
+    color: #131045;
+    margin: 0 1px;
+    padding: 0.5em;
+    background-color: #f9f9f9;
+}
+main .listbill table th:nth-of-type(even){
+    color: #EAA451;
+    background-color: white;
+}
+main .listbill table td{
+    color: #131045;
+    margin: 0 1px;
+    padding: 0.2em 0.5em;
+    background-color: #f9f9f9;
+    font-size: 1.2em;
+}
+main .listbill table td:nth-of-type(even){
+    background-color: white;
+    color: #EAA451;
+}
+@media only screen and (max-width: 1200px){
+    main{
+        left: 3em;
+        top: 6em;
+    }
+    main .revenues{
+        top: 0;
+        left: 1%;
+        width: 95%;
+        height: 10em;
+    }
+    main .listbill{
+        left: 1%;
+        width: 95%;
+        top: 12em;
+    }
+    .hidemenu-main{
+        left: 10em;
+    }
+}
+@media only screen and (max-width: 1024px){
+    main .revenues .revenue .picture{
+        width: 3em;
+        height: 3em;
+        margin: 0;
+    }
+    main .revenues .revenue .picture .fa-4x{
+        display: none;
+    }
+    main .revenues .revenue .picture .fa-3x{
+        display: block;
+    }
+    main .revenues .books .picture .fa-3x{
+        display: none;
+    }
+    main .revenues .books .picture .fa-2x{
+        display: block;
+    }
+    main .revenues .revenue .text {
+        background-color: #f1f1f1;
+        max-width: 60%;
+        margin-left: 0.5em;
+    }
+    main .revenues .revenue .text h2{
+        font-size: 2em;
+    }
+    main .revenues .revenue .text p{
+        font-size: 1em;
+    }
+    main .listbill table th{
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 768px){
+    .hidemenu-main{
+        left: 1.5em;
+    }
+    main {
+        left: 1.5em;
+    }
+    main .revenues {
+        height: 7em;
+    }
+    main .listbill .heading{
+        display:  none;
+    }
+    main .revenues .revenue .text{
+        height: 100%;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    main .revenues .revenue .text p{
+        font-size: 1em;
+    }
+    main .revenues .revenue .text h2{
+        font-size: 2em;
+    }
+    main .revenues .revenue .picture{
+        display: none;
+    }
+    main .listbill{
+        top: 8em;
+    }
+    main .listbill table{
+        width: 100%;
+        margin: 0;
+    }
+    main .listbill table th{
+        font-size: 0.8em;
+    }
+    main .listbill table td{
+        font-size: 0.5em;
+    }
+}

@@ -1,0 +1,82 @@
+{
+  "accounts": [
+    {
+      "id": 0,
+      "account": "admin1",
+      "password": "1",
+      "admin": true
+    },
+    {
+      "account": "heedwiner1106",
+      "password": "123456789",
+      "admin": false,
+      "id": 1
+    },
+    {
+      "account": "heedwiner1102",
+      "password": "123456789",
+      "admin": false,
+      "id": 2
+    },
+    {
+      "account": "heedwiner1108",
+      "password": "123456789",
+      "admin": false,
+      "id": 3
+    },
+    {
+      "account": "heedwiner1100",
+      "password": "123456789",
+      "admin": false,
+      "id": 4
+    },
+    {
+      "account": "heedwiner11",
+      "password": "123456789",
+      "admin": false,
+      "id": 5
+    },
+    {
+      "account": "heedwiner1142545",
+      "password": "123456789",
+      "admin": false,
+      "id": 6
+    },
+    {
+      "account": "heedwiner115656",
+      "password": "123456789",
+      "admin": false,
+      "id": 7
+    },
+    {
+      "account": "heedwiner1106aaaa",
+      "password": "123456789",
+      "admin": false,
+      "id": 8
+    },
+    {
+      "account": "heedwiner1106111111",
+      "password": "123456789",
+      "admin": false,
+      "id": 9
+    },
+    {
+      "account": "heedwiner1106111111a",
+      "password": "123456789",
+      "admin": false,
+      "id": 10
+    },
+    {
+      "account": "heedwiner11065674",
+      "password": "123456789",
+      "admin": false,
+      "id": 11
+    },
+    {
+      "account": "newaccount",
+      "password": "123456789",
+      "admin": false,
+      "id": 12
+    }
+  ]
+}

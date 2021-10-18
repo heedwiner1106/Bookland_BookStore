@@ -1,0 +1,58 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+    width: 700px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table th {
+    background-color: #f3f3f3;
+}
+
+@media only screen and (max-width: 700px) {
+    /* Table full chiều rộng màn hình, cách đều trái phải 10px */
+    table {
+        margin: 0 10px;
+        width: auto;
+    }
+
+    /* Cho <thead> thoát khỏi vùng hiển thị (ẩn các <th>) */
+    table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table tr:nth-child(odd) {
+      background: #ccc;
+    }
+
+    table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    /* Chèn dữ liệu <th> vào trước từng mục của <td> */
+    table td:before {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    table td:nth-of-type(1):before { content: "Lorem ipsum"; }
+    table td:nth-of-type(2):before { content: "Dolor sit"; }
+    table td:nth-of-type(3):before { content: "Consectetur"; }
+    table td:nth-of-type(4):before { content: "Elit Maecenas"; }
+    table td:nth-of-type(5):before { content: "Sodales"; }
+}

@@ -1,72 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-    /* Kiểu nút Dropdown */
-    .dropbtn {
-    background-color: #58257b;
-    color: white;
-    font-weight: bold;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    }
-
-    /* Dùng trong <div> để định vị nội dung thả xuống */
-    .dropdown {
-    position: relative;
-    display: inline-block;
-    }
-
-    /* / * Nội dung thả xuống (Ẩn theo mặc định) * / */
-    .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #e9d8f4;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    }
-
-    /* / * Liên kết bên trong danh sách thả xuống * / */
-    .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    }
-
-    /* / * Thay đổi định dạng của liên kết thả xuống khi di chuột qua * / */
-    .dropdown-content a:hover {
-    background-color: #58257b;
-    color: white;
-    }
-
-    /* / * Hiển thị menu thả xuống khi di chuột * / */
-    .dropdown:hover .dropdown-content {
-    display: block;
-    }
-
-    /* / * Thay đổi màu nền của nút thả xuống khi nội dung được hiển thị * / */
-    .dropdown:hover .dropbtn {
-    background-color: #984eca;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <script src="./jquery-3.6.0.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
-
-<h2>Dropdown Menu</h2>
-<p>Di chuột qua nút phía dưới để hiển thị menu thả xuống.(by: QTM.com)</p>
-
-<div class="dropdown">
-    <button class="dropbtn">Lập trình</button>
-    <div class="dropdown-content">
-        <a href="https://quantrimang.com/hoc-css">CSS và CSS3</a>
-        <a href="https://quantrimang.com/html">HTML</a>
-        <a href="./view/index.html">Back</a>
-    </div>
-</div>
-
+    <p id="a"></p>
+    <button id="btn">post</button>
+    <script src="./test.js"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
 </body>
 </html>

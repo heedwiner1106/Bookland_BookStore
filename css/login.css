@@ -1,24 +1,30 @@
-header{
-
+body{
+  position: relative;
+  left: 0;
+  top: 0;
 }
 main{
-    margin-top: 8em;
-    /* background-color: yellow; */
-    height: 50em;
+    position: absolute;
+    top: 8em;
+    left: 0;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .login-box{
     position: absolute;
     width: 25em;
-    height: 20em;
-    /* background-color: violet; */
-    align-self: center;
+    height: 25em;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
 }
 .account{
     align-self: center;
@@ -27,14 +33,9 @@ main{
     width: 80%;
     border-radius: 1em;
     background-color: #F9F9F9;
-}
-.account input{
-    width: 100%;
-    height: 100%;
     border-radius: 1em;
     padding-left: 1em;
     border: 1px solid #131045;
-
 }
 
 .password{
@@ -44,16 +45,12 @@ main{
     width: 80%;
     border-radius: 1em;
     background-color: #F9F9F9;
-}
-.password input{
-    width: 100%;
-    height: 100%;
     border-radius: 1em;
     padding-left: 1em;
     border-color: #131045;
     border: 1px solid #EAA451;
-
 }
+
 .login{
     align-self: center;
     margin-bottom: 0.5em;
@@ -91,21 +88,62 @@ main{
     font: bold;
     font-size: 1em;
     color: #131045;
+    margin-bottom: 1em;
     
 }
 .loginbutton:hover{
     background-color: #131045;
     color: #EAA451;
     border-color: #EAA451;
+    margin-bottom: 1em;
+    height: 3em;
+    width: 50%;
+}
+.forgotpw{
+    margin-top: 1em;
+    margin-left: 2em;
+    color: #131045;
+    font-size: 1em;
+}
+.forgotpw:hover{
+    color: #d14444;
+}
+.tosignup{
+    margin-top: 1em;
+    margin-left: 2em;
+    color: #131045;
+    font-size: 1em;
+}
+.tosignup:hover{
+    color: #d14444;
 }
 body{
     background-image: url(../picture/tron.png);
     background-repeat: no-repeat;
     background-size: 35%;
     background-position-x: 75%;
-    background-position-y: bottom;
+    background-position-y: -100%;
 }
 main{
     background-image: url(../picture/background1.png);
     background-size: 40%;
+}
+@media only screen and (max-width: 1024px) {
+  main{
+    top: 5em;
+    left: 0;
+    width: 100%;
+  }
+  main .logo{
+    display: block;
+  }
+  .login-box{
+    width: 80%;
+    max-width: 25em;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main .logo{
+    display: none;
+  }
 }
