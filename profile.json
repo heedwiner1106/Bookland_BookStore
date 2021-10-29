@@ -1,0 +1,11 @@
+{
+    "profile":[
+        {
+            "id": 0,
+            "account": "admin1",
+            "name": "admin",
+            "gmail": "hecquyner@gmail.com",
+            "avatar": "../picture/adminpic.jpg"
+        }
+    ]
+}
