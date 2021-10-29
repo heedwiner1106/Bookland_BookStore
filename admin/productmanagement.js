@@ -9,9 +9,8 @@ function openmenu(){
     document.getElementById("menus").classList.toggle("Openmenus");
     document.getElementById("mainadmin").classList.toggle("hidemenu-main");
 }
-function openbtn(x){
-    document.getElementById(x).classList.toggle("showbtn");
-}
+
+
 function showList(){
     document.getElementById("productlist").style.display = "block";
     document.getElementById("productonsale").style.display = "none";

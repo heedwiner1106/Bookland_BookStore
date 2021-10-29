@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+main .stepper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 3em 0 3em 0;
+}
+
+main .shippingaddress {
+  width: 48%;
+  padding: 1em 2em 1em 2em;
+}
+
+main .paymentMethod {
+  padding: 1em;
+  width: 40%;
+}
+
+main .shippingaddress .input,
+.paymentMethod .input {
+  display: inline-block;
+  width: 45%;
+  padding: 1em 1em 1em 0;
+}
+
+main .shippingaddress .input label,
+.input1 label,
+.paymentMethod .input label {
+  display: block;
+}
+
+main .shippingaddress .input input,
+.input1 input,
+.paymentMethod .input input,
+.paymentMethod .input1 input {
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  background: #FFFFFF;
+  width: 100%;
+}
+
+main .shippingaddress h1,
+.input1 {
+  width: 97%;
+}
+
+main .paymentMethod .method {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1em 0 1em 0;
+  border-bottom: 1px dashed #AAAAAA;
+  box-sizing: border-box;
+  padding: 0 0 2em 0
+}
+
+main .paymentMethod .method .method01 {
+  width: 33%;
+  height: 8em;
+  border: 2px solid #F0F0F0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+/* main .paymentMethod .method .method01 input {
+  position: absolute;
+  top: 0.5em;
+  left: 11.5em;
+} */
+
+main .paymentMethod .input #option {
+  border: none;
+  width: 100%;
+}
+
+main .paymentMethod .submit-payment {
+  background: #EAA451;
+  border-radius: 6px;
+  width: 100%;
+  height: 3em;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+}
+
+main .stepper .group59 .passed {
+  width: 2em;
+  height: 2em;
+  border: 4px solid #e2e2e2;
+  border-radius: 10em;
+}
+
+main .stepper .group59 {
+  display: flex;
+  align-items: center;
+}
+
+main .stepper .group59 span {
+  width: 5em;
+  height: 0.5em;
+
+  background-color: #E1E1E1;
+  border-radius: 10em;
+}
+
+main .stepper .group59 h2 {
+  margin: 0 1em 0 1em;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #131045;
+}
+
+main .stepper .group59 .active {
+  background-color:  #EAA451;
+}
+
+@media only screen and (max-width: 980px) {
+  main .stepper .group59 {
+    display: none;
+  }
+
+  main .stepper .group59:nth-child(2) {
+    display: flex;
+  }
+
+  main .stepper .group59:nth-child(2) > span {
+    display: none;
+  }
+
+  main .shippingaddress {
+    width: 100%;
+  }
+
+  main .paymentMethod {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  main .shippingaddress .input {
+    width: 100%;
+  }
+
+  main .paymentMethod .input {
+    width: 100%;
+  }
+}

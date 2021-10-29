@@ -172,7 +172,6 @@ $(".btnslider").on('click', function(){
     check("n"+sliderPo);
 })
 function check(a){
-    console.log("a: "+a);
     for(let i = 1;i<$("#slider a").length+1;i++){
         if(a == ("n"+i)) {
             $("#n" + i).css('backgroundColor','#EAA451');

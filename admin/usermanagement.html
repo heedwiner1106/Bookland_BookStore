@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="./usermanagement.css">
-    <script src="productmanagement.js"></script>
+    <script src="../jquery-3.6.0.min.js"></script>
     <title>Admin Bookland</title>
 </head>
 <body>
@@ -44,9 +44,7 @@
             <div class="name">
                 Tran Xuan Nhi
             </div>
-            <button>
-                <i class="fas fa-sign-out-alt"></i>
-            </button>
+            <a id="logout" href="../view/login.html"><button><i class="fas fa-sign-out-alt"></i></button></i></a>
         </div>
     </header>
     <nav>
@@ -69,87 +67,32 @@
             <div class="title">
                 <h2>Account</h2>
                 <h2>Password</h2>
-                <h2>Role</h2>
+                <h2>Admin</h2>
                 <h2 class="btn">SeeDetail</h2>
                 <h2 class="btn">Update</h2>
                 <h2 class="btn">Delete</h2>
             </div>
-            <div class="list">
-                <p class="account">hecquyner@gmail.com</p>
-                <p class="password">123456</p>
-                <p class="role">Admin</p>
+            <!-- <div class="list">
+                <p class="account">admin1</p>
+                <p class="password">1</p>
+                <p class="role">true</p>
                 <button class="seedetail btn"><i class="fas fa-info-circle fa-2x"></i></button>
                 <button class="update btn"><i class="fas fa-wrench fa-2x"></i></button>
                 <button class="delete btn"><i class="fas fa-user-slash fa-2x"></i></button>
-                <button class="btnmoblie" onclick="openbtn('a')"><i class="fas fa-chevron-down fa-2x"></i></button>
+                <button class="btnmoblie""><i class="fas fa-chevron-down fa-2x"></i></button>
                 <div class="nav-btn-mobile" id="a">
                     <button class="seedetail "><i class="fas fa-info-circle fa-2x"></i></button>
                     <button class="update"><i class="fas fa-wrench fa-2x"></i></button>
                     <button class="delete"><i class="fas fa-user-slash fa-2x"></i></button>
                 </div>
-            </div>
-            <div class="list">
-                <p class="account">heedwiner1106</p>
-                <p class="password">123456789</p>
-                <p class="role">Admin</p>
-                <button class="seedetail btn"><i class="fas fa-info-circle fa-2x"></i></button>
-                <button class="update btn"><i class="fas fa-wrench fa-2x"></i></button>
-                <button class="delete btn"><i class="fas fa-user-slash fa-2x"></i></button>
-                <button class="btnmoblie" onclick="openbtn('b')"><i class="fas fa-chevron-down fa-2x"></i></button>
-                <div class="nav-btn-mobile" id="b">
-                    <button class="seedetail "><i class="fas fa-info-circle fa-2x"></i></button>
-                    <button class="update"><i class="fas fa-wrench fa-2x"></i></button>
-                    <button class="delete"><i class="fas fa-user-slash fa-2x"></i></button>
-                </div>
-            </div>
-            <div class="list">
-                <p class="account">heedwiner1106</p>
-                <p class="password">123456789</p>
-                <p class="role">Admin</p>
-                <button class="seedetail btn"><i class="fas fa-info-circle fa-2x"></i></button>
-                <button class="update btn"><i class="fas fa-wrench fa-2x"></i></button>
-                <button class="delete btn"><i class="fas fa-user-slash fa-2x"></i></button>
-                <button class="btnmoblie" onclick="openbtn('c')"><i class="fas fa-chevron-down fa-2x"></i></button>
-                <div class="nav-btn-mobile" id="c">
-                    <button class="seedetail "><i class="fas fa-info-circle fa-2x"></i></button>
-                    <button class="update"><i class="fas fa-wrench fa-2x"></i></button>
-                    <button class="delete"><i class="fas fa-user-slash fa-2x"></i></button>
-                </div>
-            </div>
-            <div class="list"><p class="account"></p>
-                <p class="password"></p>
-                <p class="detail"></p>
-                <button class="update"></button>
-                <button class="delete"></button></div>
-            <div class="list"><p class="account"></p>
-                <p class="password"></p>
-                <p class="detail"></p>
-                <button class="update"></button>
-                <button class="delete"></button></div>
-            <div class="list"><p class="account"></p>
-                <p class="password"></p>
-                <p class="detail"></p>
-                <button class="update"></button>
-                <button class="delete"></button></div>
-            <div class="list"><p class="account"></p>
-                <p class="password"></p>
-                <p class="detail"></p>
-                <button class="update"></button>
-                <button class="delete"></button></div>
-            <div class="list"><p class="account"></p>
-                <p class="password"></p>
-                <p class="detail"></p>
-                <button class="update"></button>
-                <button class="delete"></button></div>
-            <div class="list"><p class="account"></p>
-                <p class="password"></p>
-                <p class="detail"></p>
-                <button class="update"></button>
-                <button class="delete"></button></div>
+            </div> -->
         </div>
     </main>
     <footer>
 
     </footer>
+    <script src="./admin.js/admin.js"></script>
+    <script src="./admin.js/usermanagement.js"></script>
+    <script src="./productmanagement.js"></script>
 </body>
 </html>

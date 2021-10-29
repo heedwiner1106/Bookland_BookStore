@@ -3,7 +3,6 @@ main{
     right: 0;
     left: 15em;
     top: 8em;
-    height: 80vh;
 }
 main .usertable{
     position: absolute;
@@ -11,7 +10,6 @@ main .usertable{
     top: 1em;
     right: 5em;
     width: 90%;
-    height: 100%;
     background-color: #f1f1f1;
     display: grid;
     grid-template-rows: 4em repeat(9, 1fr);
@@ -33,6 +31,7 @@ main .usertable .list{
     grid-template-columns: 3fr 2fr 2fr 1fr 1fr 1fr;
     text-align: center;
     border-bottom: 1px solid #023544;
+    align-items: center;
 }
 main .usertable .list p{
     font-size: 1.5em;
@@ -58,7 +57,7 @@ nav .menu .navv#user{
 .nav-btn-mobile{
     display: none;
 }
-main .usertable .list .btnmoblie{
+main .usertable .list .btnmobile{
     display: none;
 }
 @media only screen and (max-width: 1200px){
@@ -138,7 +137,7 @@ main .usertable .list .btnmoblie{
         main .usertable .list .btn{
             display: none;
         }
-        main .usertable .list .btnmoblie{
+        main .usertable .list .btnmobile{
             display: block;
         }
         .nav-btn-mobile{

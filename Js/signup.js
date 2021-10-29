@@ -14,6 +14,8 @@ var createUser = async (e) => {
       body: JSON.stringify(data),
       headers: { 'Content-Type': 'application/json'}
     })
+    window.location.assign("login.html");
+
 }
 // formSignup.addEventListener('submit',validateSignup);
 // $(document).ready(function(){
@@ -23,7 +25,7 @@ var createUser = async (e) => {
 
 
 function validateSignup(e){
-
+    
     if(Array.from(document.signupForm.account.value).length < 8 || !/[a-z]/i.test(Array.from(document.signupForm.account.value)[0])){
         alert("Please choose another account. Account must be longer than 8 characters and start with the letter.");
         document.signupForm.account.focus();
@@ -48,44 +50,30 @@ function validateSignup(e){
         return false;
     }
     else{
-        var a = 1;
-    $.ajax({
-        url: "http://localhost:3000/accounts",
-        type: 'GET',
-        dataType: 'json',
-        success:function(data){
-            if(check(data) == 0) {
-                alert("Account already exists");
-                window.history.back();
+        $.ajax({
+            url: "http://localhost:3000/accounts",
+            type: 'GET',
+            data: {
+                account: $('#account').val()
+            },
+            dataType: 'json',
+            success:function(data){
+                if(data.length > 0) {
+                    alert("Account exists");
+                    //e.preventDefault();
+                    window.location.href = './signup.html';
+                    return false;
+                }else{
+                    alert("Signup success");
+                    window.location.assign("login.html");
+                    createUser();
+                    return true;
+                }
+            },
+            error: function(){
+                alert("Wrong");
                 return false;
-            }else{
-                createUser();
-                alert("Signup success");
-                return true;
             }
-        },
-        error: function(){
-            alert("Wrong");
-            return false;
-        }
-    })
-    // if(!a) return false;
-    // else {
-    //     window.location.href = './login.html';
-    // }
+        })
     }
-}
-function check(data){
-    var val = 1;
-    console.log("length: "+data.length);
-    for(let i = 0; i< data.length;i++){
-        if(document.signupForm.account.value == data[i].account){
-            console.log(document.signupForm.account.value);
-            console.log(data[i].account);
-            val = 0;
-            break;
-        }
-    }
-    console.log("val: "+val);
-    return val;
 }

@@ -1,0 +1,178 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "truong",
+      "email": "abc@gmail.com",
+      "password": "123456",
+      "admin": true,
+      "phone": "0123456789",
+      "city": "",
+      "street": "",
+      "district": "",
+      "stripe_id": "",
+      "card_brand": "",
+      "card_last": "",
+      "card_exp_month": "",
+      "card_exp_year": ""
+    },
+    {
+      "name": "truong",
+      "email": "abc123@gmail.com",
+      "password": "12345678",
+      "admin": true,
+      "phone": "0123456789",
+      "city": "",
+      "street": "",
+      "district": "",
+      "createdAt": 1632974206199,
+      "updatedAt": 1632974206199,
+      "id": 2
+    },
+    {
+      "name": "truong",
+      "email": "abc123@gmail.com",
+      "password": "12345678",
+      "admin": true,
+      "phone": "0123456789",
+      "city": "",
+      "street": "",
+      "district": "",
+      "createdAt": 1632984528356,
+      "updatedAt": 1632984528356,
+      "id": 3
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Book"
+    },
+    {
+      "id": 2,
+      "name": "Music"
+    }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "productName": "Book Javascript",
+      "description": "AVCS",
+      "author": "ABC",
+      "company": "",
+      "price": 123,
+      "subInfo": "horror,drama",
+      "discount": "",
+      "sku": "",
+      "reviewId": 1,
+      "image": "http://placeimg.com/230/322/any",
+      "userId": 1
+    }
+  ],
+
+  "productReview": [
+    {
+      "id": 1,
+      "userId": 1,
+      "productId": 1,
+      "name": "ABC",
+      "rating": 3,
+      "content": "Hay"
+    }
+  ],
+
+  "stock": [
+    {
+      "id":1,
+      "street": "",
+      "city": "",
+      "state": "",
+      "code": 12345,
+      "phone": "0123456778",
+      "name":"",
+      "fax":"102ab"
+    }
+  ],
+
+  "stockStatus": [
+    {
+      "stockId": 1,
+      "productId": 1,
+      "count": 0,
+      "status": "het"
+    }
+  ],
+
+  "order" : [
+    {
+      "id": 1,
+      "userId":1,
+      "status": "",
+      "tax": "",
+      "shippingId":1,
+      "fristName":"",
+      "middleName":"",
+      "lastName":"",
+      "phone":"",
+      "email":"",
+      "address":""
+    }
+  ],
+
+  "orderItems": [
+    {
+      "id": 1,
+      "productId": 1,
+      "orderId": 1,
+      "unit_price": 123,
+      "quantity":2,
+      "discount":0
+    }
+  ],
+
+  "transaction": [
+    {
+      "id": 1,
+      "orderId": 1
+    }
+  ],
+
+  "shipping": [
+    {
+      "id": 1,
+      "optionId": 1,
+      "vendorId": 1
+    }
+  ],
+
+  "shippingOptions": [
+    {
+      "id": 1,
+      "name": "giao hang nhanh",
+      "price": 123
+    }
+  ],
+
+  "shippingVendors": [
+    {
+      "id": 1,
+      "name": "ABC",
+      "city": "Da Nang",
+      "phone": "0123456789",
+      "url": "",
+      "warehouseId": 1
+    }
+  ],
+
+  "shippingWarehouse": [
+    {
+      "id": 1,
+      "name": "BSS",
+      "address": "",
+      "phone": ""
+    }
+  ]
+}

@@ -1,10 +1,10 @@
-function validateLogin(){
+function validateLogin(e){
     if(document.loginForm.account.value == ""){
         alert("Please enter your account");
         document.loginForm.account.focus(); //focus in account-input area
         return false;
     }
-    else if(document.loginForm.password.value == ""){
+    if(document.loginForm.password.value == ""){
         alert("Please enter your password");
         document.loginForm.password.focus(); //focus in password-input area
         return false;
@@ -13,26 +13,29 @@ function validateLogin(){
         $.ajax({
             url: "http://localhost:3000/accounts",
             type: 'GET',
-            // data: {
-            //     account: $('#account').val(),
-            //     password: $('#password').val()
-            // },
+            data: {
+                account: $('#account').val(),
+                password: $('#password').val()
+            },
             dataType: 'json',
             success:function(data){
                 console.log("success");
-                if(data[0].admin){
-                    $('#loginForm').attr('action','../admin/admin.html');
-                    window.location.href = '../admin/admin.html';
+                console.log(data[0].account + data[0].password + data[0].admin + data.length);
+                if(data.length > 0){
+                    if(data[0].admin){
+                        //$('#loginForm').attr('action','../admin/admin.html');
+                        window.location.href = '../admin/admin.html';
+                    }
+                    //$('#loginForm').attr('action','../index.html');
+                    else window.location.href = './index.html';
                     return true;
-                }
-                else if(data.length == 0){
-                    window.location.href = './login.html';
-                    alert("wrong");
-                    return false;
                 }
                 else{
-                    window.location.href = './index.html';
-                    return true;
+                    e.preventDefault();
+                    alert("Wrong account or password!");
+                    // $('#loginForm').attr('action','../index.html');
+                    // window.location.href = './index.html';
+                    return false;
                 }
             },
             error: function(){

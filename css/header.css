@@ -143,7 +143,27 @@
         top: 2.1875em;
         width: 14em;
         border-radius: 0.5em;
-        /* background-color: crimson; */
+    }
+    .logged{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logged button{
+        background-color: #f1f1f1;
+        border: none;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        color: #d14444;
+    }
+    .avatarUser{
+        height: 3.75em;
+        width: 3.75em;
+        border-radius: 50%;
+        background-image: url(../picture/adminpic.jpg);
+        background-position: 50%;
+        background-size: 100%;
     }
     #login{
         position: absolute;
